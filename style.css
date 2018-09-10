@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #292d37;
+}
+
+h1 {
+  font-size: 2.7em;
+  text-align: center;
+  color: #fff3dd;
+}
+
+#container {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.square {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  margin: 0%;
+  color: #292d37;
+  background: #e66c15;
+}
+
+.number {
+  font-size: 16em;
+  position: absolute;
+  width: 98%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.empty {
+  background: #909090;
+}
+
+.square:after,
+.empty:after {
+  display: block;
+  padding-bottom: 85.33%;
+  content: '';
+}
+
+.square:after {
+  border-top: 10px solid #ff9e58;
+  border-right: 10px solid #7d3909;
+  border-bottom: 10px solid #7d3909;
+  border-left: 10px solid #ff9e58;
+}
+
+.empty:after {
+  border: 10px solid #909090;
+}
